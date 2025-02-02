@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brisa Portfolio</title>
+    <link rel="icon" href="/images/logo1.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b169e765a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Engineer</p>
+            <h1>Hi, I'm <span>Brisa Gabriela</span><br>From Buenos Aires, Argentina</h1>
+        </div>
+    </div>
+</div>
+<!----------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/descarga (23).jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a computer engineering student, currently starting my degree. I am expanding my knowledge in both front-end and back-end development. I love to learn and build something new, productive, innovative and creative. In my portfolio you can explore fully functional projects that reflect my commitment to quality and innovation in web development.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Full-stack developer</li>
+                        <li><span>Lenguages</span><br>Html5, Css3, JavaScript, Java, C, Python, Typescript</li>
+                        <li><span>Designer UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Other Tools and Technologies</span><br>Git, Obsidian, Jira, Notion</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>I'm currently learning Nest.js and Angular</li>
+                        <li><span>2023 - 2024</span><br>Designing as a full stack developer at TalentoTech</li>
+                        <li><span>2022 - 2023</span><br>Designing Bots Discord</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024- Current</span><br>Computer Engineering, University of Buenos Aires</li>
+                        <li><span>2020 - 2024</span><br>Bachelor in Economics, Nuestra Señora de los Remedios High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+<!----------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I design innovative and functional websites that adapt to all devices. My focus is on creating engaging visual experiences that reflect your brand identity and offer seamless navigation. From the initial idea to the final design, I work to ensure that your website stands out and connects with your audience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creating effective interfaces and human-centered user experiences. I use research, prototyping and testing to create digital products that combine visual appeal and functionality, ensuring effective and satisfying interaction with users.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I design versatile and easy to use mobile applications. I specialize in creating stunning and practical interfaces that ensure a dynamic experience for users, adapting to the specific demands of each project.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work.png">
+                <div class="layer">
+                    <h2>Data analytics in Python</h2>
+                    <p>Designing a website for a local business</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h2>Web Design</h2>
+                    <p>Designing a website for a local business</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h2>Full-stack Development</h2>
+                    <p>Designing a website for a local business</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>brisadsx@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>1562651748</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/brisadsx/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.behance.net/brisadsx"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://www.youtube.com/@brisadsx"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/brisadsx"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download my CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name= "Name" placeholder="Your Name">
+                    <input type="email" name= "email" placeholder="Your Email">
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="send" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p> &copy; Copyrigth Brisadsx. Created by Brisa Gabriela <i class="fa-solid fa-star" style="color: #e8a6bd;"></i></p>
+
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tab){
+        for(i=0; i<tablinks.length; i++){
+            tablinks[i].classList.remove('active-link');
+        }
+        for(i=0; i<tabcontents.length; i++){
+            tabcontents[i].classList.remove('active-tab');
+        }
+        document.getElementById(tab).classList.add('active-tab');
+        event.currentTarget.classList.add('active-link');
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = '0';
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbylLORir8IiUVGkLHb1bab_GOE6v10BwbX0C2jgYeQdMmrppDtwrLQd2HwYY8_daqBzBg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
