@@ -1,4 +1,4 @@
-# portfolio de [Brisa Gabriela]
+# Portfolio de [Brisa Gabriela]
 
 Bienvenida/o a mi portfolio personal. Acá encontrarás una recopilación de mis proyectos y habilidades como desarrolladora y diseñadora web, así como una muestra de mi trabajo y los proyectos en los que estoy trabajando actualmente.
 
