@@ -3,214 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brisa Portfolio</title>
+    <title>Brisa Gabriela</title>
     <link rel="icon" href="/images/logo1.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b169e765a4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo1.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Computer Engineer</p>
-            <h1>Hi, I'm <span>Brisa Gabriela</span><br>From Buenos Aires, Argentina</h1>
+     <!-----------------pre-loader---------------->
+    <div id="preloader">
+        <div class="image-container">        
+            <img src="images/Asset 3.png" class="icon">
+            <img src="images/Asset 4.png" class="icon">       
+            <img src="images/Asset 5.png" class="icon">       
+            <img src="images/Asset 6.png" class="icon">        
+            <img src="images/Asset 7.png" class="icon">        
+            <img src="images/Asset 8.png" class="icon">
         </div>
+        <div class="loading-text">0%</div>
     </div>
-</div>
-<!----------about---------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/descarga (23).jpeg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am a computer engineering student, currently starting my degree. I am expanding my knowledge in both front-end and back-end development. I love to learn and build something new, productive, innovative and creative. In my portfolio you can explore fully functional projects that reflect my commitment to quality and innovation in web development.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Web Development</span><br>Full-stack developer</li>
-                        <li><span>Lenguages</span><br>Html5, Css3, JavaScript, Java, C, Python, Typescript</li>
-                        <li><span>Designer UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Other Tools and Technologies</span><br>Git, Obsidian, Jira, Notion</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2024 - Current</span><br>I'm currently learning Nest.js and Angular</li>
-                        <li><span>2023 - 2024</span><br>Designing as a full stack developer at TalentoTech</li>
-                        <li><span>2022 - 2023</span><br>Designing Bots Discord</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2024- Current</span><br>Computer Engineering, University of Buenos Aires</li>
-                        <li><span>2020 - 2024</span><br>Bachelor in Economics, Nuestra Señora de los Remedios High School</li>
-                    </ul>
+    <div class="scroll-container">
+        <div id="main-content">
+            <div id="header">
+                <div class="container">
+                    <div class="header-text">
+                        <h1 class="main-title">
+                            <span>B</span><span>r</span><span>i</span><span>s</span><span>a</span>
+                            <span style="margin-right: 10px;"></span>
+                            <span>G</span><span>a</span><span>b</span><span>r</span><span>i</span><span>e</span><span>l</span><span>a</span>                          
+                        </h1>
+                        <div class="header-paragraphs">                       
+                            <p>Computer<br>Engineer</p>
+                            <p>Jesus is all for me<br>I just want to love Him<br> with my whole life.</p>
+                            <div class="cursor"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-</div>
-<!----------services---------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>I design innovative and functional websites that adapt to all devices. My focus is on creating engaging visual experiences that reflect your brand identity and offer seamless navigation. From the initial idea to the final design, I work to ensure that your website stands out and connects with your audience.</p>
-                <a href="#">Learn more</a>
+            
+            <!----------about---------->
+            <div id="about">
+                <div class="container">           
+                    <div class="row">               
+                        <div class="about-col-1">
+                            <div class="image-wrapper">
+                                <img src="images/descarga (23).jpeg" alt="">
+                            </div>                                  
+                        </div>               
+                        <div class="about-col-2">                   
+                            <p>I'm Brisa, a computer engineering student<br> passionate about front-end and back-end development <br>As a multidisciplinary designer, I thrive on learning<br> and crafting innovative, high-quality web solutions <br>that blend creativity and technology.</p>
+                            <div class="cursor-2"></div>                                
+                        </div>       
+                    </div>      
+                </div>     
+            </div> 
+            <!---------------stacks---------------->
+            <div id="stacks-section">    
+                    <div class="stacks-text">
+                        <h2>Stacks</h2>
+                        <p>Technologies & Tools I'm working with:</p>
+                    </div>
+                    <div class="stacks-container">
+                        <div class="stack-item" draggable="true"><img src="images/logo-javascript.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/python-5.svg" alt=""></div>
+                        <div class="stack-item" draggable="true" ><img src="images/java-4.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/html-1.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/css-3.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/react-2.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/c-1.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/nodejs-icon.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/typescript.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/bootstrap-4.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/adobe-photoshop-2.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/adobe-xd-2.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/adobe-illustrator-cc-3.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/git-icon.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/figma-icon.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/angular-icon-1.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/spotify-2.svg" alt=""></div>
+                        <div class="stack-item" draggable="true"><img src="images/notion-2.svg" alt=""></div>
+                    </div>                         
             </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>UI/UX Design</h2>
-                <p>Creating effective interfaces and human-centered user experiences. I use research, prototyping and testing to create digital products that combine visual appeal and functionality, ensuring effective and satisfying interaction with users.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>I design versatile and easy to use mobile applications. I specialize in creating stunning and practical interfaces that ensure a dynamic experience for users, adapting to the specific demands of each project.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!---------------portfolio---------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work.png">
-                <div class="layer">
-                    <h2>Data analytics in Python</h2>
-                    <p>Designing a website for a local business</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <!-----------------scrolls---------------->
+            <div id="horizontal-scroll-wrapper">
+                <!--------------in progress-------------->
+                <div id="in-progress-wrapper">
+                    <div id="in-progress">
+                        <div class="in-progress-text">
+                            <h2>Personal<br>Projects</h2>
+                            <p>I'm passionate about continuous learning and bringing ideas to life through design and development.<br>Right now, I'm dedicated to crafting interactive web experiences, refining user interfaces, and expanding my expertise in full-stack development</p>
+                        </div>
+                        <div class="in-progress-container">
+                            <img src="images/imgchess.jpg" alt="">                    
+                            <img src="images/imgpomodoro.jpg" alt="">
+                        </div>
+                    </div> 
+                </div>
+                <!----------------cinema---------------->
+                <div id="cinema-wrapper">
+                    <div id="cinema">
+                        <div class="cinema-text">
+                            <h2>Movies<br> & Books</h2>
+                            <p>I love cinema in all its forms and always have a subscription to catch the latest releases.<br><br>There's nothing like the experience of watching a movie on the big screen</p>
+                        </div>
+                        <div class="cinema-container">
+                            <img src="images/interstellar.jpg" alt="">
+                            <img src="images/harrypotter.jpg" alt="">
+                            <img src="images/divergent.jpg" alt="">
+                            <img src="images/book1.jpg" alt="">
+                            <img src="images/book2.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/work2.png">
-                <div class="layer">
-                    <h2>Web Design</h2>
-                    <p>Designing a website for a local business</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <!---------------footer----------------> 
+            <div id="footer">
+                <div class="footer-text">
+                    <h2>Thank you</h2>
+                    <p>
+                    If you want to contact me, you can write a mail to<br>  
+                    <a href="mailto:brisadsx@gmail.com" class="contact-link">brisadsx@gmail.com</a>  
+                    or send me a message to  
+                    <a href="https://instagram.com/brisadsx" target="_blank" class="contact-link">@brisadsx</a>
+                    </p>                     
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work3.png">
-                <div class="layer">
-                    <h2>Full-stack Development</h2>
-                    <p>Designing a website for a local business</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-
-<!---------------contact---------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>brisadsx@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>1562651748</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/brisadsx/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.behance.net/brisadsx"><i class="fa-brands fa-behance"></i></a>
-                    <a href="https://www.youtube.com/@brisadsx"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://github.com/brisadsx"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="" download class="btn btn2">Download my CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet"> 
-                    <input type="text" name= "Name" placeholder="Your Name">
-                    <input type="email" name= "email" placeholder="Your Email">
-                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="send" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+                <div class="footer-container">
+                    <div class="footer-item">
+                        <a href="https://www.instagram.com/brisadsx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/brisa-gabriela-515480323/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/brisadsx" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                        <a href="https://github.com/brisadsx" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://open.spotify.com/user/kjkj4qt1vdtiemogyh7jap5da?si=aa1e86ce98d341be" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                    </div>
+                    <div class="footer-copy">
+                        <p>© March 2025 (Last edit: 3 March 2025) — Argentina</p>
+                    </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <p> &copy; Copyrigth Brisadsx. Created by Brisa Gabriela <i class="fa-solid fa-star" style="color: #e8a6bd;"></i></p>
-
-    </div>
-</div>
-
-
-<script>
-
-    var tablinks = document.getElementsByClassName('tab-links');
-    var tabcontents = document.getElementsByClassName('tab-contents');
-
-    function opentab(tab){
-        for(i=0; i<tablinks.length; i++){
-            tablinks[i].classList.remove('active-link');
-        }
-        for(i=0; i<tabcontents.length; i++){
-            tabcontents[i].classList.remove('active-tab');
-        }
-        document.getElementById(tab).classList.add('active-tab');
-        event.currentTarget.classList.add('active-link');
-    }
-</script>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = '0';
-    }
-    function closemenu(){
-        sidemenu.style.right = '-200px';
-    }
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbylLORir8IiUVGkLHb1bab_GOE6v10BwbX0C2jgYeQdMmrppDtwrLQd2HwYY8_daqBzBg/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
-
+    <!-----------------javascript---------------->
+    <script>
+        const cursor = document.querySelector('.cursor');
+        const paragraphs = document.querySelectorAll('p');
+    
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';           
+        });
+    </script>  
+    
+    <script src="app.js"></script>
 </body>
 </html>
