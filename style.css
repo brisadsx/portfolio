@@ -426,14 +426,23 @@ body{
 
 /* --------------Responsive---------------- */  
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5em) {
+
+    *{
+        font-family: "Inter", sans-serif;
+    }
 
     .header-text {
         margin-top: 10%;
     }
 
+    .main-title {
+        text-align: center;
+    }
     .header-text h1 span {
-        font-size: 55px;
+        font-size: 5.5rem;
+        text-align: center;
+        line-height: 0.9;
     }
 
     .header-paragraphs {
@@ -528,7 +537,6 @@ body{
 
     #cinema {
         margin-top: 40%;
-        text-align: center;
         margin-bottom: 5%;
     }
 
@@ -544,7 +552,7 @@ body{
         align-items: center;
         margin: 0 auto;
         line-height: 0.8;
-        margin-bottom: 20px; /* Added margin-bottom to create space between h2 and cinema container */
+        margin-bottom: 20px; 
     }
 
     .cinema-text p {
@@ -552,25 +560,6 @@ body{
         font-size: 20px;
         z-index: 2;
         position: relative;
-    }
-
-    .cinema-container {
-        display: flex;
-        gap: 20px;
-        margin-top: 0; /* Removed margin-top to bring the container closer to h2 */
-        overflow-x: auto; 
-        scroll-snap-type: x mandatory;
-    }
-
-    .cinema-container img {
-        width: 430%;
-        height: auto;
-        scroll-snap-align: start; 
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .cinema-container img:hover {
-        transform: scale(1); 
     }
 
 
