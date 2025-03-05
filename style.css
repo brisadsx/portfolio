@@ -139,6 +139,10 @@ body{
     margin-top: 40px;
 }
 
+.main-title {
+    text-align: center;
+}
+
 .header-text h1 span{
     position: relative;
     font-family: "Nyght", serif;
@@ -162,14 +166,6 @@ body{
     font-weight: 600;
     font-style: normal;
     line-height: 1;
-}
-
-.main-title span {
-    display: inline-block;
-    position: relative;
-    font-family: "Nyght", serif;
-    font-size: 100px;
-    color: #f4a4ba;
 }
 
 
@@ -439,6 +435,7 @@ body{
     .main-title {
         text-align: center;
     }
+    
     .header-text h1 span {
         font-size: 5.5rem;
         text-align: center;
@@ -514,6 +511,7 @@ body{
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        z-index: 2;
     }
 
     .in-progress-text p {
