@@ -39,8 +39,8 @@
                             <span>G</span><span>a</span><span>b</span><span>r</span><span>i</span><span>e</span><span>l</span><span>a</span>                          
                         </h1>
                         <div class="header-paragraphs">                       
-                            <p>Computer<br>Engineer</p>
-                            <p>Jesus is all for me<br>I just want to love Him<br> with my whole life.</p>
+                            <p class="parallax" data-speed="2">Computer<br>Engineer</p>
+                            <p class="parallax" data-speed="2">Jesus is all for me<br>I just want to love Him<br> with my whole life.</p>
                             <div class="cursor"></div>
                         </div>
                     </div>
@@ -53,11 +53,11 @@
                     <div class="row">               
                         <div class="about-col-1">
                             <div class="image-wrapper">
-                                <img src="images/descarga (23).jpeg" alt="">
+                                <img class="parallax" data-speed="1.5" src="images/descarga (23).jpeg" alt="">
                             </div>                                  
                         </div>               
                         <div class="about-col-2">                   
-                            <p>I'm Brisa, a computer engineering student<br> passionate about front-end and back-end development <br>As a multidisciplinary designer, I thrive on learning<br> and crafting innovative, high-quality web solutions <br>that blend creativity and technology.</p>                               
+                            <p class="parallax" data-speed="1.2">I'm Brisa, a computer engineering student<br> passionate about front-end and back-end development <br>As a multidisciplinary designer, I thrive on learning<br> and crafting innovative, high-quality web solutions <br>that blend creativity and technology.</p>                               
                         </div>       
                     </div>      
                 </div>     
@@ -68,7 +68,7 @@
                         <h2>Stacks</h2>
                         <p>Technologies & Tools I'm working with:</p>
                     </div>
-                    <div class="stacks-container">
+                    <div class="stacks-container" >
                         <div class="stack-item" draggable="true"><img src="images/logo-javascript.svg" alt=""></div>
                         <div class="stack-item" draggable="true"><img src="images/python-5.svg" alt=""></div>
                         <div class="stack-item" draggable="true" ><img src="images/java-4.svg" alt=""></div>
@@ -91,38 +91,40 @@
             </div>
             <!-----------------scrolls---------------->
             <div id="horizontal-scroll-wrapper">
-                <!--------------in progress-------------->
-                <div id="in-progress-wrapper">
-                    <div id="in-progress">
-                        <div class="in-progress-text">
-                            <h2>Personal<br>Projects</h2>
-                            <p>I'm passionate about continuous learning and bringing ideas to life through design and development.<br>Right now, I'm dedicated to crafting interactive web experiences, refining user interfaces, and expanding my expertise in full-stack development</p>
-                        </div>
-                        <div class="in-progress-container">
-                            <img src="images/imgchess.jpg" alt="">                    
-                            <img src="images/imgpomodoro.jpg" alt="">
-                        </div>
-                    </div> 
-                </div>
-                <!----------------cinema---------------->
-                <div id="cinema-wrapper">
-                    <div id="cinema">
-                        <div class="cinema-text">
-                            <h2>Movies<br> & Books</h2>
-                            <p>I love cinema in all its forms and always have a subscription to catch the latest releases.<br><br>There's nothing like the experience of watching a movie on the big screen</p>
-                        </div>
-                        <div class="cinema-container">
-                            <img src="images/interstellar.jpg" alt="">
-                            <img src="images/harrypotter.jpg" alt="">
-                            <img src="images/divergent.jpg" alt="">
-                            <img src="images/book1.jpg" alt="">
-                            <img src="images/book2.jpg" alt="">
-                        </div>
+                <div id="sections-container" class="parallax" data-speed="1">
+                    <!--------------in progress-------------->
+                    <div id="in-progress-wrapper">                   
+                        <div id="in-progress">                        
+                            <div class="in-progress-text">                         
+                                <h2>Personal<br>Projects</h2>                        
+                                <p>I'm passionate about continuous learning and bringing ideas to life through design and development.<br>Right now, I'm dedicated to crafting interactive web experiences, refining user interfaces, and expanding my expertise in full-stack development</p>
+                            </div>                       
+                            <div class="in-progress-container">                            
+                                <img src="images/imgchess.jpg" alt="">                                                
+                                <img src="images/imgpomodoro.jpg" alt="">                        
+                            </div>                    
+                        </div>                
                     </div>
-                </div>
+                    <!----------------cinema---------------->
+                    <div id="cinema-wrapper">                  
+                        <div id="cinema">
+                            <div class="cinema-text">                           
+                                <h2>Movies<br> & Books</h2>                          
+                                <p>I love cinema in all its forms and always have a subscription to catch the latest releases. Every film captures something real even in fantasy. <br><br>There's nothing like the experience of watching a movie on the big screen</p>                       
+                            </div>                    
+                            <div class="cinema-container">                           
+                                <img src="images/interstellar.jpg" alt="">                           
+                                <img src="images/thewindrises.jpg" alt="">                           
+                                <img src="images/gladiator.jpg" alt="">                            
+                                <img src="images/book1.jpg" alt="">                            
+                                <img src="images/book2.jpg" alt="">                       
+                            </div>                    
+                        </div>                
+                    </div>
+                </div>                                
             </div>
             <!---------------footer----------------> 
-            <div id="footer">
+            <div id="footer" class="parallax" data-speed="0.8">
                 <div class="footer-text">
                     <h2>Thank you</h2>
                     <p>

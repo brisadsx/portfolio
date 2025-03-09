@@ -36,3 +36,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const parallaxElements = document.querySelectorAll(".parallax");
+
+    document.addEventListener("mousemove", (e) => {
+        let x = (e.clientX / window.innerWidth - 0.5) * 10;
+        let y = (e.clientY / window.innerHeight - 0.5) * 10;
+        
+        parallaxElements.forEach((el) => {
+            let speed = el.getAttribute("data-speed");
+            el.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+        });
+    });
+});
